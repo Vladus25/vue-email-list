@@ -1,4 +1,7 @@
+// V.AJAX
 
+
+// Generare un email dal API
 function emailGenerator() {
 
   $.ajax({
@@ -15,6 +18,7 @@ function emailGenerator() {
 
 }
 
+// Stampare nella pagina email generato
 function generateEmail(email) {
 
   const target = $('#target');
@@ -24,6 +28,7 @@ function generateEmail(email) {
 
 // Lancio di funzioni
 function init() {
+  
   for (var i = 0; i < 10; i++) {
     emailGenerator();
   }
